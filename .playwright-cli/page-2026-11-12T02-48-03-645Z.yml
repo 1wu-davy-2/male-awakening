@@ -1,0 +1,274 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "醒 男性觉醒 MANHOOD · HANDBOOK" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - generic [ref=e5]: 醒
+        - generic [ref=e6]:
+          - text: 男性觉醒
+          - generic [ref=e7]: MANHOOD · HANDBOOK
+      - navigation [ref=e8]:
+        - link "首页" [ref=e9] [cursor=pointer]:
+          - /url: index.html
+        - link "一 · 认知" [ref=e10] [cursor=pointer]:
+          - /url: ch01.html
+        - link "二 · 金钱" [ref=e11] [cursor=pointer]:
+          - /url: ch02.html
+        - link "三 · 止损" [ref=e12] [cursor=pointer]:
+          - /url: ch03.html
+        - link "四 · 识别" [ref=e13] [cursor=pointer]:
+          - /url: ch04.html
+        - link "五 · 维权" [ref=e14] [cursor=pointer]:
+          - /url: ch05.html
+        - link "六 · 爱自己" [ref=e15] [cursor=pointer]:
+          - /url: ch06.html
+        - link "七 · 重建" [ref=e16] [cursor=pointer]:
+          - /url: ch07.html
+        - link "附录" [ref=e17] [cursor=pointer]:
+          - /url: appendix.html
+        - link "热点发布" [ref=e18] [cursor=pointer]:
+          - /url: hot.html
+  - generic [ref=e20]:
+    - complementary [ref=e21]:
+      - paragraph [ref=e22]: 本章目录
+      - list [ref=e23]:
+        - listitem [ref=e24]:
+          - link "这一页在做什么" [ref=e25] [cursor=pointer]:
+            - /url: "#sH-1"
+        - listitem [ref=e26]:
+          - link "大事记：十年间改变婚恋账本的权威发布" [ref=e27] [cursor=pointer]:
+            - /url: "#sH-2"
+        - listitem [ref=e28]:
+          - link "热点一：涉彩礼司法解释（2024）" [ref=e29] [cursor=pointer]:
+            - /url: "#sH-3"
+        - listitem [ref=e30]:
+          - link "热点二：婚姻家庭编解释（二）（2025）" [ref=e31] [cursor=pointer]:
+            - /url: "#sH-4"
+        - listitem [ref=e32]:
+          - link "权威数据窗：大背景在怎么变" [ref=e33] [cursor=pointer]:
+            - /url: "#sH-5"
+        - listitem [ref=e34]:
+          - link "自己盯住官方发布：四个入口" [ref=e35] [cursor=pointer]:
+            - /url: "#sH-6"
+        - listitem [ref=e36]:
+          - link "更新说明" [ref=e37] [cursor=pointer]:
+            - /url: "#sH-7"
+    - main [ref=e38]:
+      - generic [ref=e39]:
+        - generic [ref=e40]: 热点 · 权威发布
+        - heading "法院和官方机构最近发布了什么" [level=1] [ref=e41]
+        - paragraph [ref=e42]: 把婚恋家事领域的官方发布按时间排成一条线：涉彩礼新规、婚姻家庭编解释（二）、权威数据与检索入口，附信息图。
+      - article [ref=e43]:
+        - heading "01 这一页在做什么" [level=2] [ref=e44]
+        - paragraph [ref=e45]:
+          - text: 前七篇讲的是"规则是什么"，这一页讲的是"规则最近发生了什么"。婚恋家事领域不是铁板一块——司法解释几乎每年都在动，典型案例每个季度都在发，统计数据每月都在更新。
+          - strong [ref=e46]: 看懂一门法律的人，和盯得住它最近动向的人，拿到的是两种结果。
+        - paragraph [ref=e47]: 这一页做三件事：
+        - list [ref=e48]:
+          - listitem [ref=e49]:
+            - strong [ref=e50]: 把官方发布按时间排成一条线
+            - text: ：哪年哪个机构发布了什么、什么时候生效、跟你的钱包和身体有什么关系；
+          - listitem [ref=e51]:
+            - strong [ref=e52]: 把最重要的两份文件做成海报卡
+            - text: ：2024 年涉彩礼新规、2025 年婚姻家庭编解释（二）——这两份文件直接改写了本站第二篇的核心规则；
+          - listitem [ref=e53]:
+            - strong [ref=e54]: 给你自己盯住官方发布的方法
+            - text: ：与其收藏二手解读，不如学会一手检索。
+        - generic [ref=e55]:
+          - generic [ref=e56]: 先说清楚
+          - paragraph [ref=e57]:
+            - text: 本页所有日期与内容均来自全国人大网、中国政府网、最高人民法院官网、民政部官网的公开发布信息，条文与规则一律标注"要旨"口径——
+            - strong [ref=e58]: 引用请以原文为准
+            - text: 。官方发布不设快照缓存，个别发布会的具体日期以官网新闻稿为准；本页如有出入，以官方渠道为准，这正是下面第六节教你自己盯住它们的原因。
+        - heading "02 大事记：十年间改变婚恋账本的权威发布" [level=2] [ref=e59]
+        - img "婚恋家事相关立法与权威发布大事记时间线（2016–2025）" [ref=e60]
+        - paragraph [ref=e61]: 时间线里的五件事，每一件都直接改写了普通人的婚恋决策成本：
+        - table [ref=e63]:
+          - rowgroup [ref=e64]:
+            - row [ref=e65]:
+              - columnheader "时间" [ref=e66]
+              - columnheader "发布机构" [ref=e67]
+              - columnheader "发布内容" [ref=e68]
+              - columnheader "对你的直接影响" [ref=e69]
+          - rowgroup [ref=e70]:
+            - row [ref=e71]:
+              - cell "2016-03-01" [ref=e72]
+              - cell "全国人大常委会" [ref=e73]
+              - cell "《反家庭暴力法》施行" [ref=e74]
+              - cell "人身安全保护令入法；家暴（不分性别）有了独立于离婚诉讼的救济通道" [ref=e75]
+            - row [ref=e76]:
+              - cell "2021-01-01" [ref=e77]
+              - cell "全国人大 + 最高人民法院" [ref=e78]
+              - cell "《民法典》施行；婚姻家庭编司法解释（一）同日施行" [ref=e79]
+              - cell "离婚冷静期（1077 条）、家务劳动补偿（1088 条）、彩礼返还法定情形（解释一第 5 条）全部定型" [ref=e80]
+            - row [ref=e81]:
+              - cell "2022-01-01" [ref=e82]
+              - cell "全国人大常委会" [ref=e83]
+              - cell "《法律援助法》施行" [ref=e84]
+              - cell "经济困难的维权者可申请免费律师；12348 从\"热线\"升级为法定制度" [ref=e85]
+            - row [ref=e86]:
+              - cell "2024-01 / 2024-02-01" [ref=e87]
+              - cell "最高人民法院" [ref=e88]
+              - cell "发布《涉彩礼纠纷司法解释》并同步发布典型案例" [ref=e89]
+              - cell "彩礼返还规则细化，\"高额彩礼\"治理有了直接裁判依据（下节详解）" [ref=e90]
+            - row [ref=e91]:
+              - cell "2025-02-01" [ref=e92]
+              - cell "最高人民法院" [ref=e93]
+              - cell "《民法典婚姻家庭编司法解释（二）》施行" [ref=e94]
+              - cell "婚内赠与第三人财产可追回、抢夺藏匿子女可保全、同居析产有规则（再下节详解）" [ref=e95]
+        - generic [ref=e96]:
+          - generic [ref=e97]: 机制说明
+          - paragraph [ref=e98]: 司法解释不是法律，但全国法院必须执行——它的实际约束力约等于"规则本身"。典型案例不具有强制力，但代表最高裁判倾向，各地法院会参照。所以盯官方发布，盯这两类文件效率最高。
+        - heading "03 热点一：涉彩礼司法解释（2024）" [level=2] [ref=e99]
+        - img "最高人民法院涉彩礼纠纷司法解释要点海报：2024年2月1日施行" [ref=e100]
+        - paragraph [ref=e101]: 这份文件是近十年婚恋领域最重要的规则变化之一。对普通男性的三个直接变化：
+        - list [ref=e102]:
+          - listitem [ref=e103]:
+            - generic [ref=e104]: "\"借婚姻索取财物\"有了可操作的追回路径"
+            - paragraph [ref=e105]: 以前彩礼纠纷只有解释（一）第五条的三种情形，边界之外全看裁判尺度；新规把"以彩礼为名索取财物"单独拉出来，给了明确的返还依据。父母被"儿子要结婚、不给就崩"式索要的大额财物，追回的规则基础更硬了。
+          - listitem [ref=e106]:
+            - generic [ref=e107]: 恋爱赠与和彩礼被切开了
+            - paragraph [ref=e108]: 新规明确节日红包、日常消费等一般赠与不算彩礼。这对双方都是好事——它把"恋爱期间我给她花的钱全算彩礼"这种不切实际的期待砍掉了，也让真正的大额给付（订婚、三金、改口费）在诉讼中更容易被认定为彩礼。
+          - listitem [ref=e109]:
+            - generic [ref=e110]: "\"登记+共同生活\"不再是绝对挡箭牌"
+            - paragraph [ref=e111]: 已登记结婚且共同生活的，离婚时原则上不返还彩礼；但共同生活时间较短且数额过高的，法院可以酌定返还。什么叫"较短"、什么叫"过高"，六个裁量变量（见海报）——这套变量体系让"闪婚闪离式的彩礼收割"难度陡增。
+        - generic [ref=e112]:
+          - generic [ref=e113]:
+            - generic [ref=e114]: 发布案例要旨
+            - generic [ref=e115]: 最高法新闻发布会发布的同类裁判思路（匿名化转述）
+          - generic [ref=e116]:
+            - generic [ref=e117]:
+              - term [ref=e118]: 事实
+              - definition [ref=e119]: 双方登记结婚并短暂共同生活，男方家庭给付彩礼 18.6 万元（当地居民人均可支配收入的多倍），婚后数月因矛盾分居，男方诉请返还。
+            - generic [ref=e120]:
+              - term [ref=e121]: 裁判要旨
+              - definition [ref=e122]: 法院未因"已登记结婚"直接驳回，而是结合共同生活时长、彩礼与当地收入的比值、是否孕育子女、双方过错综合酌定部分返还。这正是新规确立的裁量路径。
+          - generic [ref=e123]:
+            - text: 给你的启示：裁判从"有没有登记"转向"这段婚姻真实存在了多久"。证据准备的方向也要跟着变：共同生活时间线的证明（同住、开销、就医记录）成了关键项。匿名化改编，详见
+            - link "第二篇" [ref=e124] [cursor=pointer]:
+              - /url: ch02.html
+            - text: s2-3。
+        - heading "04 热点二：婚姻家庭编解释（二）（2025）" [level=2] [ref=e125]
+        - img "最高人民法院民法典婚姻家庭编解释（二）要点海报：2025年2月1日施行" [ref=e126]
+        - paragraph [ref=e127]: 如果说 2024 年那份文件管的是"婚前的钱"，2025 年这份管的就是"婚内的钱和孩子"。三处与男性维权直接相关：
+        - list [ref=e128]:
+          - listitem [ref=e129]:
+            - strong [ref=e130]: 婚内赠与第三者的财产可以追回了
+            - text: （第①点）：此前这类案件各地裁判不一，新规统一为"违反忠实义务处分共同财产，另一方请求确认无效并返还的，法院支持"。注意适用对象是
+            - strong [ref=e131]: 所有性别
+            - text: ——丈夫被出轨、妻子给第三者转的钱，你同样有权追回；
+          - listitem [ref=e132]:
+            - strong [ref=e133]: 抢夺藏匿孩子有了程序武器
+            - text: （第②点）：离婚拉锯中最无解的"把孩子藏起来"，从道德谴责升级为可申请行为保全的事项。这一条同样双向适用；
+          - listitem [ref=e134]:
+            - strong [ref=e135]: 父母出资购房与夫妻间房产给予的规则被写细
+            - text: （第③⑤点）：本站第七篇"婚前必谈十二问"第三问（房）的答案空间，从此有了更明确的规则边界。
+        - generic [ref=e136]:
+          - generic [ref=e137]: 一句话总结这两年
+          - paragraph [ref=e138]: 2024 把"彩礼"装进规则，2025 把"婚内财产与孩子"装进规则。两份文件加起来，本站反复强调的那句话有了制度背书：算账不是小气，规则本来就按算账的方式写的。
+        - heading "05 权威数据窗：大背景在怎么变" [level=2] [ref=e139]
+        - img "全国结婚登记对数趋势图（2013-2024，民政部公开数据口径）" [ref=e140]
+        - paragraph [ref=e141]: 把这条趋势放在这里，不是贩卖焦虑，是解释两件事：
+        - list [ref=e142]:
+          - listitem [ref=e143]:
+            - strong [ref=e144]: 为什么婚恋博弈越来越"财务化"
+            - text: ：结婚对数十年下行，意味着供给结构变了——部分地区婚龄人口性别比失衡叠加婚姻成本上升，围绕彩礼、房产、代际出资的谈判只会更密集。规则跟不上博弈密度时，纠纷就堆积在法院；
+          - listitem [ref=e145]:
+            - strong [ref=e146]: 为什么官方在加速出规则
+            - text: ：涉彩礼司法解释（2024）、解释（二）（2025）密集出台，正是对这十年数据变化的制度回应。看懂数据，你就能预判下一批规则会落在哪个领域。
+        - generic [ref=e147]:
+          - generic [ref=e148]: 正确做法
+          - paragraph [ref=e149]: 引用任何"结婚率""离婚率"数据前先问三个问题：口径是登记对数还是结婚率？是初步数还是决算数？哪年发布的？二手自媒体最容易在这三处动手脚。
+        - heading "06 自己盯住官方发布：四个入口" [level=2] [ref=e150]
+        - table [ref=e152]:
+          - rowgroup [ref=e153]:
+            - row [ref=e154]:
+              - columnheader "入口" [ref=e155]
+              - columnheader "看什么" [ref=e156]
+              - columnheader "检索关键词" [ref=e157]
+          - rowgroup [ref=e158]:
+            - row [ref=e159]:
+              - cell "最高人民法院官网 court.gov.cn" [ref=e160]: 最高人民法院官网court.gov.cn
+              - cell "司法解释征求意见稿与正式稿、新闻发布会、典型案例、\"司法大数据\"" [ref=e161]
+              - cell "\"涉彩礼\"\"婚姻家庭编 解释\"\"典型案例\"\"新闻发布\"" [ref=e162]
+            - row [ref=e163]:
+              - cell "中国政府网 / 全国人大网 gov.cn / npc.gov.cn" [ref=e164]: 中国政府网 / 全国人大网gov.cn / npc.gov.cn
+              - cell "法律全文与修改动态（民法典、反家暴法、法律援助法）" [ref=e165]
+              - cell "\"民法典 婚姻家庭编\"\"人身安全保护令\"" [ref=e166]
+            - row [ref=e167]:
+              - cell "民政部官网 mca.gov.cn" [ref=e168]: 民政部官网mca.gov.cn
+              - cell "季度/年度婚姻登记统计、政策文件" [ref=e169]
+              - cell "\"婚姻登记数据\"\"统计季报\"" [ref=e170]
+            - row [ref=e171]:
+              - cell "中国法院网 / 各地高院 chinacourt.org" [ref=e172]: 中国法院网 / 各地高院chinacourt.org
+              - cell "裁判文书、白皮书、辖区典型案例" [ref=e173]
+              - cell "\"婚姻家事 白皮书\"\"彩礼 返还\"" [ref=e174]
+        - paragraph [ref=e175]: 两个进阶动作：
+        - list [ref=e176]:
+          - listitem [ref=e177]:
+            - strong [ref=e178]: 盯征求意见稿
+            - text: ：司法解释出台前会公开征求意见，那时你能看到规则的方向，提前半年到一年调整自己的决策（比如要不要加名、彩礼怎么谈）；
+          - listitem [ref=e179]:
+            - strong [ref=e180]: 盯本省高院
+            - text: ：婚恋家事的地方裁判尺度差异不小，你未来诉讼大概率就在本地法院。省高院的"审判白皮书"和"典型案例"比全国性文件更接近你将要遇到的现实。
+        - generic [ref=e181]:
+          - generic [ref=e182]: 风险提示
+          - paragraph [ref=e183]: 社交媒体上的"新规解读"是这个领域谣言密度最高的板块——"净身出户""彩礼上限五万""登记即分房"之类的假规则常年流传。辨别方法只有一条：任何规则说法，去官网找得到原文才算数；找不到原文的，按谣言处理。
+        - heading "07 更新说明" [level=2] [ref=e184]
+        - paragraph [ref=e185]: 本页为滚动维护页：大事记与数据将随官方新发布更新。最后核对时间 2026-11。本站正文（第二篇、第七篇）的规则表述已同步至 2025 年 2 月施行的最新司法解释口径。
+        - generic [ref=e186]:
+          - generic [ref=e187]: 记住这句
+          - paragraph [ref=e188]: 规则在往"算清账、防收割"的方向走，但规则只保护拿着证据的人。官方发布给你方向，证据档案袋给你武器——两样都要有。
+      - navigation [ref=e189]:
+        - link "上一篇 附录" [ref=e190] [cursor=pointer]:
+          - /url: appendix.html
+          - generic [ref=e191]: 上一篇
+          - text: 附录
+  - contentinfo [ref=e193]:
+    - generic [ref=e194]:
+      - generic [ref=e195]:
+        - heading "关于本站" [level=4] [ref=e196]
+        - paragraph [ref=e197]: 一个不卖课、不带货、不收徒的男性自我教育与维权常识站。全部内容围绕两件事：看懂关系里的真实成本，学会用法律和常识保护自己。
+        - paragraph [ref=e198]: 我们不仇视任何性别。我们反对的是利用信息差、情感依赖和法律盲区进行的剥削。
+      - generic [ref=e199]:
+        - heading "章节" [level=4] [ref=e200]
+        - list [ref=e201]:
+          - listitem [ref=e202]:
+            - link "一 · 认知觉醒" [ref=e203] [cursor=pointer]:
+              - /url: ch01.html
+          - listitem [ref=e204]:
+            - link "二 · 金钱与返还" [ref=e205] [cursor=pointer]:
+              - /url: ch02.html
+          - listitem [ref=e206]:
+            - link "三 · 及时止损" [ref=e207] [cursor=pointer]:
+              - /url: ch03.html
+          - listitem [ref=e208]:
+            - link "四 · 识别与取证" [ref=e209] [cursor=pointer]:
+              - /url: ch04.html
+          - listitem [ref=e210]:
+            - link "五 · 维权实操" [ref=e211] [cursor=pointer]:
+              - /url: ch05.html
+          - listitem [ref=e212]:
+            - link "六 · 爱自己" [ref=e213] [cursor=pointer]:
+              - /url: ch06.html
+          - listitem [ref=e214]:
+            - link "七 · 关系重建" [ref=e215] [cursor=pointer]:
+              - /url: ch07.html
+          - listitem [ref=e216]:
+            - link "附录 · 工具包" [ref=e217] [cursor=pointer]:
+              - /url: appendix.html
+          - listitem [ref=e218]:
+            - link "热点 · 权威发布" [ref=e219] [cursor=pointer]:
+              - /url: hot.html
+      - generic [ref=e220]:
+        - heading "求助" [level=4] [ref=e221]
+        - list [ref=e222]:
+          - listitem [ref=e223]: 报警 / 紧急危险：110
+          - listitem [ref=e224]: 法律援助热线：12348
+          - listitem [ref=e225]: 心理援助：当地精神卫生中心
+          - listitem [ref=e226]: 反诈专线：96110
+    - generic [ref=e227]: 免责声明：本站内容为普法与生活常识整理，不构成法律意见。法律适用因个案事实、证据、地域裁判尺度而异，涉及具体纠纷请委托执业律师。文中案例为公开裁判思路的匿名化改写，用于说明规则，不代表任何真实个案的完整事实。发布日期：2026-11。
+    - generic [ref=e228]:
+      - generic [ref=e229]: 男性觉醒 · 生存与维权手册
+      - generic [ref=e230]: 共 8 篇 · 全文约 102,495 字
+  - button "回到顶部": ↑
