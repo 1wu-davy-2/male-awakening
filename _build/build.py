@@ -13,6 +13,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "_src")
 CONTENT = os.path.join(SRC, "content")
 
+# 版本号规则：每次升级只 +0.1（v1.3 → v1.4 → v1.5 …），改这里即可，页脚自动同步
+VERSION = "v1.4"
+
 # slug, 导航短名, kicker, h1, lede, 副标题
 PAGES = [
     dict(slug="index", nav="首页", kicker="", h1="", lede="",
@@ -267,6 +270,7 @@ def main():
             TITLE=p["title"],
             DESC=p["desc"],
             NAV=nav,
+            VERSION=VERSION,
             WORDS="{:,.0f}".format(total),
             TOTAL_CASES=str(total_cases),
             TOTAL_LAWS=str(total_laws),
