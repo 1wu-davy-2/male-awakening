@@ -6,6 +6,7 @@
 import os
 import re
 import sys
+import json
 from string import Template
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -112,21 +113,95 @@ def collect_headings(html):
     return out
 
 
-def build_side(headings):
-    if not headings:
-        return '<ul class="side-list"></ul>'
-    items = []
-    first = True
+def build_toc(headings):
+    """按 h2 分组生成目录；h3 只在当前节展开（CSS 控制），避免侧栏变成一堵墙。"""
+    groups = []
     for level, hid, text in headings:
+        if not hid:
+            continue
         if level == 2:
-            items.append(
-                '<li><a href="#%s"%s>%s</a></li>'
-                % (hid, ' class="is-active"' if first else "", text)
+            groups.append({"id": hid, "text": text, "subs": []})
+        elif level == 3 and groups:
+            groups[-1]["subs"].append({"id": hid, "text": text})
+
+    if not groups:
+        return '<p class="side-title">本章目录 <span>0 节</span></p><ol class="toc"></ol>'
+
+    items = []
+    for i, g in enumerate(groups, 1):
+        active = " is-active is-open" if i == 1 else ""
+        subs = ""
+        if g["subs"]:
+            subs = (
+                '<ul class="toc-sub">'
+                + "".join('<li><a href="#%s">%s</a></li>' % (s["id"], s["text"]) for s in g["subs"])
+                + "</ul>"
             )
-            first = False
-        elif level == 3:
-            items.append('<li class="sub"><a href="#%s">%s</a></li>' % (hid, text))
-    return '<ul class="side-list">\n        ' + "\n        ".join(items) + "\n      </ul>"
+        items.append(
+            '<li class="toc-item%s"><a class="toc-link" href="#%s"><i>%02d</i><span>%s</span></a>%s</li>'
+            % (active, g["id"], i, g["text"], subs)
+        )
+    return (
+        '<p class="side-title">本章目录 <span>%d 节</span></p>\n      <ol class="toc">\n        %s\n      </ol>'
+        % (len(groups), "\n        ".join(items))
+    )
+
+
+def page_stats(html):
+    """单页统计：字数、阅读时长、案例数与法条数"""
+    words = cjk_count(strip_tags(html))
+    return {
+        "words": words,
+        "words_text": ("%.1f 万" % (words / 10000.0)) if words >= 10000 else "{:,}".format(words),
+        "minutes": max(1, int(round(words / 380.0))),
+        "cases": len(re.findall(r'class="case"', html)),
+        "laws": len(re.findall(r'class="law"', html)),
+    }
+
+
+def build_meta(st):
+    parts = [
+        "<li><b>%s</b> 字</li>" % st["words_text"],
+        "<li>约 <b>%d</b> 分钟</li>" % st["minutes"],
+    ]
+    if st["cases"]:
+        parts.append("<li><b>%d</b> 个案例</li>" % st["cases"])
+    if st["laws"]:
+        parts.append("<li><b>%d</b> 条法条</li>" % st["laws"])
+    return "".join(parts)
+
+
+def build_search_index(contents):
+    """按 h2 小节切分生成检索条目，前端做子串匹配。"""
+    entries = []
+    for p in PAGES:
+        if p["slug"] == "index":
+            continue
+        html = contents[p["slug"]]
+        ms = list(re.finditer(r"<h2([^>]*)>(.*?)</h2>", html, re.S | re.I))
+        for i, m in enumerate(ms):
+            hid_m = re.search(r'id="([^"]+)"', m.group(1))
+            if not hid_m:
+                continue
+            start = m.end()
+            end = ms[i + 1].start() if i + 1 < len(ms) else len(html)
+            body = re.sub(r"\s+", " ", strip_tags(html[start:end])).strip()
+            title = re.sub(r"\s+", " ", strip_tags(m.group(2))).strip()
+            # 跳过"本章要点"这类无检索价值的节
+            if not title or title in ("本章要点",):
+                continue
+            entries.append({
+                "p": p["slug"],
+                "n": p["nav"],
+                "t": title,
+                "a": hid_m.group(1),
+                "x": body[:110],
+            })
+    js = "window.SEARCH_INDEX=" + json.dumps(entries, ensure_ascii=False, separators=(",", ":")) + ";\n"
+    dest = os.path.join(ROOT, "assets", "js", "search-index.js")
+    with open(dest, "w", encoding="utf-8") as f:
+        f.write(js)
+    return len(entries)
 
 
 def build_pagenav(idx):
@@ -151,13 +226,20 @@ def main():
     tpl_page = Template(read(os.path.join(SRC, "layout.html")))
     tpl_index = Template(read(os.path.join(SRC, "layout-index.html")))
 
-    # 第一遍：读内容 + 统计总字数
+    # 第一遍：读内容 + 统计总字数与全站规模
     contents = {}
     total = 0
+    total_cases = 0
+    total_laws = 0
+    total_sections = 0
     for p in PAGES:
         html = load_content(p["slug"])
         contents[p["slug"]] = html
         total += cjk_count(strip_tags(html))
+        if p["slug"] != "index":
+            total_cases += len(re.findall(r'class="case"', html))
+            total_laws += len(re.findall(r'class="law"', html))
+            total_sections += len(re.findall(r"<h2", html))
 
     report = []
     for i, p in enumerate(PAGES):
@@ -186,14 +268,19 @@ def main():
             DESC=p["desc"],
             NAV=nav,
             WORDS="{:,.0f}".format(total),
+            TOTAL_CASES=str(total_cases),
+            TOTAL_LAWS=str(total_laws),
+            TOTAL_SECTIONS=str(total_sections),
         )
 
         if p["slug"] == "index":
             out = tpl_index.substitute(CONTENT=html, **common)
         else:
+            st = page_stats(html)
             out = tpl_page.substitute(
                 CONTENT=html,
-                SIDE=build_side(heads),
+                SIDE=build_toc(heads),
+                META=build_meta(st),
                 PAGENAV=build_pagenav(i),
                 KICKER=p["kicker"],
                 H1=p["h1"],
@@ -207,6 +294,10 @@ def main():
         n = cjk_count(strip_tags(html))
         report.append((p["slug"], n))
         print("  生成 %-12s %7d 字" % (p["slug"] + ".html", n))
+
+    n_idx = build_search_index(contents)
+    print("  生成检索索引 %d 条 -> assets/js/search-index.js" % n_idx)
+    print("  全站：%d 个案例 · %d 条法条 · %d 个章节小节" % (total_cases, total_laws, total_sections))
 
     print("\n合计中文字数：%d" % total)
     if total < 100000:

@@ -9,10 +9,12 @@
 <meta property="og:title" content="附录：法条速查、证据清单与工具模板 | 男性觉醒">
 <meta property="og:description" content="民法典婚姻家庭编条文速查、维权证据清单模板、情感剥削自查量表、12周训练表、一周菜谱、网络黑话术语表。">
 <meta property="og:type" content="article">
+<meta name="theme-color" content="#f7f4ee">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+<a class="skip" href="#content">跳到正文</a>
 <div class="progress"></div>
 
 <header class="topbar">
@@ -21,43 +23,47 @@
       <span class="brand-mark">醒</span>
       <span class="brand-text">男性觉醒<small>MANHOOD · HANDBOOK</small></span>
     </a>
-    <button class="nav-toggle" aria-label="展开导航" aria-expanded="false">目录</button>
-    <nav class="nav">
+    <nav class="nav" id="nav">
       <a href="index.html">首页</a><a href="ch01.html">一 · 认知</a><a href="ch02.html">二 · 金钱</a><a href="ch03.html">三 · 止损</a><a href="ch04.html">四 · 识别</a><a href="ch05.html">五 · 维权</a><a href="ch06.html">六 · 爱自己</a><a href="ch07.html">七 · 重建</a><a href="appendix.html" class="is-active">附录</a><a href="hot.html">热点发布</a>
     </nav>
+    <div class="topbar-tools">
+      <button class="icon-btn search-open" type="button" aria-label="搜索全站内容">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20.5 20.5 16.7 16.7"/></svg>
+        <span>搜索</span><kbd class="kbd">Ctrl K</kbd>
+      </button>
+      <button class="icon-btn toc-toggle" type="button" aria-label="展开本章目录" aria-expanded="false">目录</button>
+      <button class="icon-btn nav-toggle" type="button" aria-label="展开章节导航" aria-expanded="false">章节</button>
+    </div>
   </div>
 </header>
 
+<div class="toc-scrim"></div>
+
 <div class="shell">
   <div class="layout">
-    <aside class="side">
-      <p class="side-title">本章目录</p>
-      <ul class="side-list">
-        <li><a href="#sa-1" class="is-active">法条速查表</a></li>
-        <li><a href="#sa-2">维权证据清单模板</a></li>
-        <li><a href="#sa-3">情感剥削自查量表（40 条）</a></li>
-        <li><a href="#sa-4">12 周训练与一周菜谱速查</a></li>
-        <li class="sub"><a href="#sa-4-1">12 周训练卡（冰箱贴版）</a></li>
-        <li class="sub"><a href="#sa-4-2">一周菜谱与采购清单</a></li>
-        <li><a href="#sa-5">行动卡：出事后的 72 小时与 30 天</a></li>
-        <li><a href="#sa-6">术语表</a></li>
-        <li><a href="#sa-7">求助资源</a></li>
-        <li><a href="#sa-8">情绪日志与自我监测模板</a></li>
-        <li class="sub"><a href="#sa-8-1">情绪日志（每日 2 分钟）</a></li>
-        <li class="sub"><a href="#sa-8-2">反刍窗口预约卡</a></li>
-        <li><a href="#sa-9">预算表与还款计划模板</a></li>
-        <li class="sub"><a href="#sa-9-1">月度预算三圈法</a></li>
-        <li class="sub"><a href="#sa-9-2">还款计划跟踪表</a></li>
-        <li><a href="#sa-10">二十问快答（FAQ）</a></li>
-        <li><a href="#sa-11">给读者的一句话</a></li>
-      </ul>
+    <aside class="side" id="toc">
+      <p class="side-title">本章目录 <span>11 节</span></p>
+      <ol class="toc">
+        <li class="toc-item is-active is-open"><a class="toc-link" href="#sa-1"><i>01</i><span>法条速查表</span></a></li>
+        <li class="toc-item"><a class="toc-link" href="#sa-2"><i>02</i><span>维权证据清单模板</span></a></li>
+        <li class="toc-item"><a class="toc-link" href="#sa-3"><i>03</i><span>情感剥削自查量表（40 条）</span></a></li>
+        <li class="toc-item"><a class="toc-link" href="#sa-4"><i>04</i><span>12 周训练与一周菜谱速查</span></a><ul class="toc-sub"><li><a href="#sa-4-1">12 周训练卡（冰箱贴版）</a></li><li><a href="#sa-4-2">一周菜谱与采购清单</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#sa-5"><i>05</i><span>行动卡：出事后的 72 小时与 30 天</span></a></li>
+        <li class="toc-item"><a class="toc-link" href="#sa-6"><i>06</i><span>术语表</span></a></li>
+        <li class="toc-item"><a class="toc-link" href="#sa-7"><i>07</i><span>求助资源</span></a></li>
+        <li class="toc-item"><a class="toc-link" href="#sa-8"><i>08</i><span>情绪日志与自我监测模板</span></a><ul class="toc-sub"><li><a href="#sa-8-1">情绪日志（每日 2 分钟）</a></li><li><a href="#sa-8-2">反刍窗口预约卡</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#sa-9"><i>09</i><span>预算表与还款计划模板</span></a><ul class="toc-sub"><li><a href="#sa-9-1">月度预算三圈法</a></li><li><a href="#sa-9-2">还款计划跟踪表</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#sa-10"><i>10</i><span>二十问快答（FAQ）</span></a></li>
+        <li class="toc-item"><a class="toc-link" href="#sa-11"><i>11</i><span>给读者的一句话</span></a></li>
+      </ol>
     </aside>
     <main class="main">
-      <div class="pagehead">
+      <header class="pagehead">
         <div class="kicker">附录 · 工具包</div>
         <h1>带走就能用的东西</h1>
         <p class="lede">法条速查、证据清单、自查量表、训练表、菜谱、术语表 —— 不用通读全文，需要时直接翻这里。</p>
-      </div>
+        <ul class="page-meta"><li><b>5,508</b> 字</li><li>约 <b>14</b> 分钟</li></ul>
+      </header>
       <article class="prose" id="content">
 <h2 id="sa-1" data-num="01">法条速查表</h2>
 
@@ -416,11 +422,12 @@
   </div>
   <div class="footer-bottom">
     <span>男性觉醒 · 生存与维权手册</span>
-    <span>共 8 篇 · 全文约 106,188 字</span>
+    <span>全文约 106,365 字 · 68 个案例 · 41 条法条</span>
   </div>
 </footer>
 
 <button class="to-top" aria-label="回到顶部">↑</button>
+<script src="assets/js/search-index.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

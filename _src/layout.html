@@ -9,10 +9,12 @@
 <meta property="og:title" content="${TITLE}">
 <meta property="og:description" content="${DESC}">
 <meta property="og:type" content="article">
+<meta name="theme-color" content="#f7f4ee">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+<a class="skip" href="#content">跳到正文</a>
 <div class="progress"></div>
 
 <header class="topbar">
@@ -21,25 +23,34 @@
       <span class="brand-mark">醒</span>
       <span class="brand-text">男性觉醒<small>MANHOOD · HANDBOOK</small></span>
     </a>
-    <button class="nav-toggle" aria-label="展开导航" aria-expanded="false">目录</button>
-    <nav class="nav">
+    <nav class="nav" id="nav">
       ${NAV}
     </nav>
+    <div class="topbar-tools">
+      <button class="icon-btn search-open" type="button" aria-label="搜索全站内容">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20.5 20.5 16.7 16.7"/></svg>
+        <span>搜索</span><kbd class="kbd">Ctrl K</kbd>
+      </button>
+      <button class="icon-btn toc-toggle" type="button" aria-label="展开本章目录" aria-expanded="false">目录</button>
+      <button class="icon-btn nav-toggle" type="button" aria-label="展开章节导航" aria-expanded="false">章节</button>
+    </div>
   </div>
 </header>
 
+<div class="toc-scrim"></div>
+
 <div class="shell">
   <div class="layout">
-    <aside class="side">
-      <p class="side-title">本章目录</p>
+    <aside class="side" id="toc">
       ${SIDE}
     </aside>
     <main class="main">
-      <div class="pagehead">
+      <header class="pagehead">
         <div class="kicker">${KICKER}</div>
         <h1>${H1}</h1>
         <p class="lede">${LEDE}</p>
-      </div>
+        <ul class="page-meta">${META}</ul>
+      </header>
       <article class="prose" id="content">
 ${CONTENT}
       </article>
@@ -84,11 +95,12 @@ ${CONTENT}
   </div>
   <div class="footer-bottom">
     <span>男性觉醒 · 生存与维权手册</span>
-    <span>共 8 篇 · 全文约 ${WORDS} 字</span>
+    <span>全文约 ${WORDS} 字 · ${TOTAL_CASES} 个案例 · ${TOTAL_LAWS} 条法条</span>
   </div>
 </footer>
 
 <button class="to-top" aria-label="回到顶部">↑</button>
+<script src="assets/js/search-index.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

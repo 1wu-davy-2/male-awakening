@@ -9,10 +9,12 @@
 <meta property="og:title" content="维权实操：报警、起诉、财产保全与刑事自诉全流程 | 男性觉醒">
 <meta property="og:description" content="证据体系搭建、电子数据固定、报警场景清单、起诉状要素与管辖、财产保全、重婚罪自诉、被诬告时的自保。">
 <meta property="og:type" content="article">
+<meta name="theme-color" content="#f7f4ee">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+<a class="skip" href="#content">跳到正文</a>
 <div class="progress"></div>
 
 <header class="topbar">
@@ -21,65 +23,49 @@
       <span class="brand-mark">醒</span>
       <span class="brand-text">男性觉醒<small>MANHOOD · HANDBOOK</small></span>
     </a>
-    <button class="nav-toggle" aria-label="展开导航" aria-expanded="false">目录</button>
-    <nav class="nav">
+    <nav class="nav" id="nav">
       <a href="index.html">首页</a><a href="ch01.html">一 · 认知</a><a href="ch02.html">二 · 金钱</a><a href="ch03.html">三 · 止损</a><a href="ch04.html">四 · 识别</a><a href="ch05.html" class="is-active">五 · 维权</a><a href="ch06.html">六 · 爱自己</a><a href="ch07.html">七 · 重建</a><a href="appendix.html">附录</a><a href="hot.html">热点发布</a>
     </nav>
+    <div class="topbar-tools">
+      <button class="icon-btn search-open" type="button" aria-label="搜索全站内容">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20.5 20.5 16.7 16.7"/></svg>
+        <span>搜索</span><kbd class="kbd">Ctrl K</kbd>
+      </button>
+      <button class="icon-btn toc-toggle" type="button" aria-label="展开本章目录" aria-expanded="false">目录</button>
+      <button class="icon-btn nav-toggle" type="button" aria-label="展开章节导航" aria-expanded="false">章节</button>
+    </div>
   </div>
 </header>
 
+<div class="toc-scrim"></div>
+
 <div class="shell">
   <div class="layout">
-    <aside class="side">
-      <p class="side-title">本章目录</p>
-      <ul class="side-list">
-        <li><a href="#s5-1" class="is-active">维权总纲：三段式，顺序错了全盘皆输</a></li>
-        <li class="sub"><a href="#s5-1-1">为什么绝大多数人死在第一段</a></li>
-        <li><a href="#s5-2">证据体系：五类证据与证明力排序</a></li>
-        <li class="sub"><a href="#s5-2-1">证据链思维：一根链条强过一堆碎片</a></li>
-        <li class="sub"><a href="#s5-2-2">录音：最被低估的自助取证手段</a></li>
-        <li><a href="#s5-3">报警：六种场景、说清楚三件事</a></li>
-        <li class="sub"><a href="#s5-3-1">六种该报警的场景</a></li>
-        <li><a href="#s5-4">民事起诉：管辖、请求、费用、时限</a></li>
-        <li class="sub"><a href="#s5-4-1">去哪个法院</a></li>
-        <li class="sub"><a href="#s5-4-2">诉讼请求怎么写</a></li>
-        <li class="sub"><a href="#s5-4-3">花多少钱、多久出结果</a></li>
-        <li class="sub"><a href="#s5-4-4">支付令：被遗忘的快刀</a></li>
-        <li><a href="#s5-5">财产保全：防止赢了官司输了钱包</a></li>
-        <li class="sub"><a href="#s5-5-1">两种保全与一个死线</a></li>
-        <li class="sub"><a href="#s5-5-2">你要准备三样东西</a></li>
-        <li><a href="#s5-6">刑事路径：重婚、诈骗、敲诈、诽谤</a></li>
-        <li class="sub"><a href="#s5-6-1">重婚罪：刑法 258 条</a></li>
-        <li class="sub"><a href="#s5-6-2">诈骗罪：什么时候婚恋纠纷变成刑事</a></li>
-        <li class="sub"><a href="#s5-6-3">敲诈勒索罪：刑法 274 条</a></li>
-        <li class="sub"><a href="#s5-6-4">诽谤罪：刑法 246 条</a></li>
-        <li><a href="#s5-7">被反向指控时：家暴、性骚扰、抢孩子</a></li>
-        <li class="sub"><a href="#s5-7-1">被指控家暴</a></li>
-        <li class="sub"><a href="#s5-7-2">被指控性骚扰或其他越界行为</a></li>
-        <li class="sub"><a href="#s5-7-3">抢孩子与藏匿孩子</a></li>
-        <li><a href="#s5-8">律师怎么选、怎么谈、怎么配合</a></li>
-        <li class="sub"><a href="#s5-8-1">选人的四个标准</a></li>
-        <li class="sub"><a href="#s5-8-2">第一次面谈请带齐三样</a></li>
-        <li><a href="#s5-9">执行：判决书不是终点站</a></li>
-        <li class="sub"><a href="#s5-9-1">执行的三板斧</a></li>
-        <li class="sub"><a href="#s5-9-2">执行不能：也要接受的坏消息</a></li>
-        <li><a href="#s5-10">谈判实战：从摊牌到协议的六段式</a></li>
-        <li><a href="#s5-11">五份拿来就用的文书模板</a></li>
-        <li class="sub"><a href="#s5-11-1">模板一：事件时间线（一切文书的地基）</a></li>
-        <li class="sub"><a href="#s5-11-2">模板二：还款协议（协商成功的落地件）</a></li>
-        <li class="sub"><a href="#s5-11-3">模板三：起诉状骨架（民间借贷）</a></li>
-        <li class="sub"><a href="#s5-11-4">模板四：证据目录（提交法院的标准件）</a></li>
-        <li class="sub"><a href="#s5-11-5">模板五：协商函（自己写的"律师函平替"）</a></li>
-        <li><a href="#s5-12">维权是长战线：把自己当项目管理</a></li>
-        <li><a href="#s5-99">本章要点</a></li>
-      </ul>
+    <aside class="side" id="toc">
+      <p class="side-title">本章目录 <span>13 节</span></p>
+      <ol class="toc">
+        <li class="toc-item is-active is-open"><a class="toc-link" href="#s5-1"><i>01</i><span>维权总纲：三段式，顺序错了全盘皆输</span></a><ul class="toc-sub"><li><a href="#s5-1-1">为什么绝大多数人死在第一段</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s5-2"><i>02</i><span>证据体系：五类证据与证明力排序</span></a><ul class="toc-sub"><li><a href="#s5-2-1">证据链思维：一根链条强过一堆碎片</a></li><li><a href="#s5-2-2">录音：最被低估的自助取证手段</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s5-3"><i>03</i><span>报警：六种场景、说清楚三件事</span></a><ul class="toc-sub"><li><a href="#s5-3-1">六种该报警的场景</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s5-4"><i>04</i><span>民事起诉：管辖、请求、费用、时限</span></a><ul class="toc-sub"><li><a href="#s5-4-1">去哪个法院</a></li><li><a href="#s5-4-2">诉讼请求怎么写</a></li><li><a href="#s5-4-3">花多少钱、多久出结果</a></li><li><a href="#s5-4-4">支付令：被遗忘的快刀</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s5-5"><i>05</i><span>财产保全：防止赢了官司输了钱包</span></a><ul class="toc-sub"><li><a href="#s5-5-1">两种保全与一个死线</a></li><li><a href="#s5-5-2">你要准备三样东西</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s5-6"><i>06</i><span>刑事路径：重婚、诈骗、敲诈、诽谤</span></a><ul class="toc-sub"><li><a href="#s5-6-1">重婚罪：刑法 258 条</a></li><li><a href="#s5-6-2">诈骗罪：什么时候婚恋纠纷变成刑事</a></li><li><a href="#s5-6-3">敲诈勒索罪：刑法 274 条</a></li><li><a href="#s5-6-4">诽谤罪：刑法 246 条</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s5-7"><i>07</i><span>被反向指控时：家暴、性骚扰、抢孩子</span></a><ul class="toc-sub"><li><a href="#s5-7-1">被指控家暴</a></li><li><a href="#s5-7-2">被指控性骚扰或其他越界行为</a></li><li><a href="#s5-7-3">抢孩子与藏匿孩子</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s5-8"><i>08</i><span>律师怎么选、怎么谈、怎么配合</span></a><ul class="toc-sub"><li><a href="#s5-8-1">选人的四个标准</a></li><li><a href="#s5-8-2">第一次面谈请带齐三样</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s5-9"><i>09</i><span>执行：判决书不是终点站</span></a><ul class="toc-sub"><li><a href="#s5-9-1">执行的三板斧</a></li><li><a href="#s5-9-2">执行不能：也要接受的坏消息</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s5-10"><i>10</i><span>谈判实战：从摊牌到协议的六段式</span></a></li>
+        <li class="toc-item"><a class="toc-link" href="#s5-11"><i>11</i><span>五份拿来就用的文书模板</span></a><ul class="toc-sub"><li><a href="#s5-11-1">模板一：事件时间线（一切文书的地基）</a></li><li><a href="#s5-11-2">模板二：还款协议（协商成功的落地件）</a></li><li><a href="#s5-11-3">模板三：起诉状骨架（民间借贷）</a></li><li><a href="#s5-11-4">模板四：证据目录（提交法院的标准件）</a></li><li><a href="#s5-11-5">模板五：协商函（自己写的"律师函平替"）</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s5-12"><i>12</i><span>维权是长战线：把自己当项目管理</span></a></li>
+        <li class="toc-item"><a class="toc-link" href="#s5-99"><i>13</i><span>本章要点</span></a></li>
+      </ol>
     </aside>
     <main class="main">
-      <div class="pagehead">
+      <header class="pagehead">
         <div class="kicker">第五篇 · 维权实操</div>
         <h1>从报警到开庭：一个人的维权操作手册</h1>
         <p class="lede">维权不是拼命，是拼流程。先固定证据，再谈判，最后诉讼 —— 顺序错了，全盘皆输。</p>
-      </div>
+        <ul class="page-meta"><li><b>1.1 万</b> 字</li><li>约 <b>28</b> 分钟</li><li><b>11</b> 个案例</li><li><b>1</b> 条法条</li></ul>
+      </header>
       <article class="prose" id="content">
 <h2 id="s5-1" data-num="01">维权总纲：三段式，顺序错了全盘皆输</h2>
 
@@ -563,11 +549,12 @@
   </div>
   <div class="footer-bottom">
     <span>男性觉醒 · 生存与维权手册</span>
-    <span>共 8 篇 · 全文约 106,188 字</span>
+    <span>全文约 106,365 字 · 68 个案例 · 41 条法条</span>
   </div>
 </footer>
 
 <button class="to-top" aria-label="回到顶部">↑</button>
+<script src="assets/js/search-index.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

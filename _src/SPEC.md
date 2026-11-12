@@ -79,6 +79,7 @@
   <div class="score-box"><span>0–5 分：<b>健康</b></span><span>6–12 分：<b>警戒</b></span><span>13 分以上：<b>高危</b></span></div>
 </div>
 ```
+> 清单的勾选框与"已勾选 x/y"计数由 `main.js` 在运行时注入，**内容侧只写普通 `<ol><li>`**，不要手写 input 或额外 div。
 
 ### 6. 步骤流程
 ```html

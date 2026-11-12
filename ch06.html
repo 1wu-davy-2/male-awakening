@@ -9,10 +9,12 @@
 <meta property="og:title" content="男性自我照顾：健身、做饭、护肤、财务与心理 | 男性觉醒">
 <meta property="og:description" content="男性体检清单、12周力量训练计划、三餐蛋白质配比、零失败菜谱、护肤三步法、应急金与保险配置、孤独感处理。">
 <meta property="og:type" content="article">
+<meta name="theme-color" content="#f7f4ee">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+<a class="skip" href="#content">跳到正文</a>
 <div class="progress"></div>
 
 <header class="topbar">
@@ -21,83 +23,53 @@
       <span class="brand-mark">醒</span>
       <span class="brand-text">男性觉醒<small>MANHOOD · HANDBOOK</small></span>
     </a>
-    <button class="nav-toggle" aria-label="展开导航" aria-expanded="false">目录</button>
-    <nav class="nav">
+    <nav class="nav" id="nav">
       <a href="index.html">首页</a><a href="ch01.html">一 · 认知</a><a href="ch02.html">二 · 金钱</a><a href="ch03.html">三 · 止损</a><a href="ch04.html">四 · 识别</a><a href="ch05.html">五 · 维权</a><a href="ch06.html" class="is-active">六 · 爱自己</a><a href="ch07.html">七 · 重建</a><a href="appendix.html">附录</a><a href="hot.html">热点发布</a>
     </nav>
+    <div class="topbar-tools">
+      <button class="icon-btn search-open" type="button" aria-label="搜索全站内容">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20.5 20.5 16.7 16.7"/></svg>
+        <span>搜索</span><kbd class="kbd">Ctrl K</kbd>
+      </button>
+      <button class="icon-btn toc-toggle" type="button" aria-label="展开本章目录" aria-expanded="false">目录</button>
+      <button class="icon-btn nav-toggle" type="button" aria-label="展开章节导航" aria-expanded="false">章节</button>
+    </div>
   </div>
 </header>
 
+<div class="toc-scrim"></div>
+
 <div class="shell">
   <div class="layout">
-    <aside class="side">
-      <p class="side-title">本章目录</p>
-      <ul class="side-list">
-        <li><a href="#s6-1" class="is-active">底盘理论：六件事撑住一个人</a></li>
-        <li><a href="#s6-2">身体：体检、睡眠、体脂、三项指标</a></li>
-        <li class="sub"><a href="#s6-2-1">男性体检清单：按年龄做减法和加法</a></li>
-        <li class="sub"><a href="#s6-2-2">睡眠：先把这一项修好，再谈其他</a></li>
-        <li class="sub"><a href="#s6-2-3">看懂自己的三个数字</a></li>
-        <li><a href="#s6-3">力量训练：12 周从零开始的完整计划</a></li>
-        <li class="sub"><a href="#s6-3-1">开始之前：三个原则</a></li>
-        <li class="sub"><a href="#s6-3-2">12 周课表</a></li>
-        <li class="sub"><a href="#s6-3-3">训练之外的三个变量</a></li>
-        <li><a href="#s6-4">有氧与心肺：Zone 2 是普通人的主粮</a></li>
-        <li><a href="#s6-5">吃：蛋白质、三餐模板、外卖与酒</a></li>
-        <li class="sub"><a href="#s6-5-1">先算蛋白质，再谈别的</a></li>
-        <li class="sub"><a href="#s6-5-2">三餐模板：照抄就能活</a></li>
-        <li class="sub"><a href="#s6-5-3">外卖点单的四条铁律</a></li>
-        <li class="sub"><a href="#s6-5-4">酒精：说清代价，不做审判</a></li>
-        <li><a href="#s6-6">做饭：20 道零失败菜与一周备餐</a></li>
-        <li class="sub"><a href="#s6-6-1">十分钟档：工作日晚餐的下限</a></li>
-        <li class="sub"><a href="#s6-6-2">三十分钟档：周末的正经菜</a></li>
-        <li class="sub"><a href="#s6-6-3">周末硬菜档：请客够用</a></li>
-        <li class="sub"><a href="#s6-6-4">一周备餐（Meal Prep）：周日的 90 分钟</a></li>
-        <li><a href="#s6-7">皮肤与形象：三步、剃须、穿搭、发型</a></li>
-        <li class="sub"><a href="#s6-7-1">护肤只需要三步</a></li>
-        <li class="sub"><a href="#s6-7-2">剃须与头皮</a></li>
-        <li class="sub"><a href="#s6-7-3">穿搭：合身压倒一切</a></li>
-        <li class="sub"><a href="#s6-7-4">发型与体面</a></li>
-        <li><a href="#s6-8">住与钱：房间、记账、应急金、保险</a></li>
-        <li class="sub"><a href="#s6-8-1">房间：秩序是最便宜的心理治疗</a></li>
-        <li class="sub"><a href="#s6-8-2">记账：先看清，再谈省钱</a></li>
-        <li class="sub"><a href="#s6-8-3">应急金：六个月是你的安全垫</a></li>
-        <li class="sub"><a href="#s6-8-4">保险：普通人的四件套</a></li>
-        <li><a href="#s6-9">心理：孤独、友谊、情绪与就医</a></li>
-        <li class="sub"><a href="#s6-9-1">允许孤独存在</a></li>
-        <li class="sub"><a href="#s6-9-2">男性友谊需要维护，不会自动存在</a></li>
-        <li class="sub"><a href="#s6-9-3">情绪命名：把"烦"拆开</a></li>
-        <li class="sub"><a href="#s6-9-4">什么时候该找专业帮助</a></li>
-        <li><a href="#s6-10">营养进阶：算、买、补三件事</a></li>
-        <li class="sub"><a href="#s6-10-1">算：三步算出你每天该吃多少</a></li>
-        <li class="sub"><a href="#s6-10-2">买：超市动线的三次绕路</a></li>
-        <li class="sub"><a href="#s6-10-3">补：值钱的补剂只有三样</a></li>
-        <li><a href="#s6-11">厨房进阶：火候、调味、冰箱管理</a></li>
-        <li class="sub"><a href="#s6-11-1">火候三句话</a></li>
-        <li class="sub"><a href="#s6-11-2">调味四件套与万能比例</a></li>
-        <li class="sub"><a href="#s6-11-3">冰箱管理法</a></li>
-        <li><a href="#s6-12">心理工具箱：反刍中断与情绪日志</a></li>
-        <li class="sub"><a href="#s6-12-1">反刍中断法（分手/维权期的刚需）</a></li>
-        <li class="sub"><a href="#s6-12-2">情绪日志（两栏三行法）</a></li>
-        <li class="sub"><a href="#s6-12-3">社交重建的具体动作</a></li>
-        <li><a href="#s6-13">形象进阶：置装预算与衣橱清单</a></li>
-        <li><a href="#s6-14">五个关键动作的技术要点</a></li>
-        <li class="sub"><a href="#s6-14-1">深蹲</a></li>
-        <li class="sub"><a href="#s6-14-2">罗马尼亚硬拉</a></li>
-        <li class="sub"><a href="#s6-14-3">卧推</a></li>
-        <li class="sub"><a href="#s6-14-4">划船</a></li>
-        <li class="sub"><a href="#s6-14-5">平板支撑</a></li>
-        <li><a href="#s6-15">三种疼痛的处理原则</a></li>
-        <li><a href="#s6-16">厨房装备：一百元起步清单</a></li>
-        <li><a href="#s6-99">本章要点</a></li>
-      </ul>
+    <aside class="side" id="toc">
+      <p class="side-title">本章目录 <span>17 节</span></p>
+      <ol class="toc">
+        <li class="toc-item is-active is-open"><a class="toc-link" href="#s6-1"><i>01</i><span>底盘理论：六件事撑住一个人</span></a></li>
+        <li class="toc-item"><a class="toc-link" href="#s6-2"><i>02</i><span>身体：体检、睡眠、体脂、三项指标</span></a><ul class="toc-sub"><li><a href="#s6-2-1">男性体检清单：按年龄做减法和加法</a></li><li><a href="#s6-2-2">睡眠：先把这一项修好，再谈其他</a></li><li><a href="#s6-2-3">看懂自己的三个数字</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s6-3"><i>03</i><span>力量训练：12 周从零开始的完整计划</span></a><ul class="toc-sub"><li><a href="#s6-3-1">开始之前：三个原则</a></li><li><a href="#s6-3-2">12 周课表</a></li><li><a href="#s6-3-3">训练之外的三个变量</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s6-4"><i>04</i><span>有氧与心肺：Zone 2 是普通人的主粮</span></a></li>
+        <li class="toc-item"><a class="toc-link" href="#s6-5"><i>05</i><span>吃：蛋白质、三餐模板、外卖与酒</span></a><ul class="toc-sub"><li><a href="#s6-5-1">先算蛋白质，再谈别的</a></li><li><a href="#s6-5-2">三餐模板：照抄就能活</a></li><li><a href="#s6-5-3">外卖点单的四条铁律</a></li><li><a href="#s6-5-4">酒精：说清代价，不做审判</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s6-6"><i>06</i><span>做饭：20 道零失败菜与一周备餐</span></a><ul class="toc-sub"><li><a href="#s6-6-1">十分钟档：工作日晚餐的下限</a></li><li><a href="#s6-6-2">三十分钟档：周末的正经菜</a></li><li><a href="#s6-6-3">周末硬菜档：请客够用</a></li><li><a href="#s6-6-4">一周备餐（Meal Prep）：周日的 90 分钟</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s6-7"><i>07</i><span>皮肤与形象：三步、剃须、穿搭、发型</span></a><ul class="toc-sub"><li><a href="#s6-7-1">护肤只需要三步</a></li><li><a href="#s6-7-2">剃须与头皮</a></li><li><a href="#s6-7-3">穿搭：合身压倒一切</a></li><li><a href="#s6-7-4">发型与体面</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s6-8"><i>08</i><span>住与钱：房间、记账、应急金、保险</span></a><ul class="toc-sub"><li><a href="#s6-8-1">房间：秩序是最便宜的心理治疗</a></li><li><a href="#s6-8-2">记账：先看清，再谈省钱</a></li><li><a href="#s6-8-3">应急金：六个月是你的安全垫</a></li><li><a href="#s6-8-4">保险：普通人的四件套</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s6-9"><i>09</i><span>心理：孤独、友谊、情绪与就医</span></a><ul class="toc-sub"><li><a href="#s6-9-1">允许孤独存在</a></li><li><a href="#s6-9-2">男性友谊需要维护，不会自动存在</a></li><li><a href="#s6-9-3">情绪命名：把"烦"拆开</a></li><li><a href="#s6-9-4">什么时候该找专业帮助</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s6-10"><i>10</i><span>营养进阶：算、买、补三件事</span></a><ul class="toc-sub"><li><a href="#s6-10-1">算：三步算出你每天该吃多少</a></li><li><a href="#s6-10-2">买：超市动线的三次绕路</a></li><li><a href="#s6-10-3">补：值钱的补剂只有三样</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s6-11"><i>11</i><span>厨房进阶：火候、调味、冰箱管理</span></a><ul class="toc-sub"><li><a href="#s6-11-1">火候三句话</a></li><li><a href="#s6-11-2">调味四件套与万能比例</a></li><li><a href="#s6-11-3">冰箱管理法</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s6-12"><i>12</i><span>心理工具箱：反刍中断与情绪日志</span></a><ul class="toc-sub"><li><a href="#s6-12-1">反刍中断法（分手/维权期的刚需）</a></li><li><a href="#s6-12-2">情绪日志（两栏三行法）</a></li><li><a href="#s6-12-3">社交重建的具体动作</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s6-13"><i>13</i><span>形象进阶：置装预算与衣橱清单</span></a></li>
+        <li class="toc-item"><a class="toc-link" href="#s6-14"><i>14</i><span>五个关键动作的技术要点</span></a><ul class="toc-sub"><li><a href="#s6-14-1">深蹲</a></li><li><a href="#s6-14-2">罗马尼亚硬拉</a></li><li><a href="#s6-14-3">卧推</a></li><li><a href="#s6-14-4">划船</a></li><li><a href="#s6-14-5">平板支撑</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s6-15"><i>15</i><span>三种疼痛的处理原则</span></a></li>
+        <li class="toc-item"><a class="toc-link" href="#s6-16"><i>16</i><span>厨房装备：一百元起步清单</span></a></li>
+        <li class="toc-item"><a class="toc-link" href="#s6-99"><i>17</i><span>本章要点</span></a></li>
+      </ol>
     </aside>
     <main class="main">
-      <div class="pagehead">
+      <header class="pagehead">
         <div class="kicker">第六篇 · 爱自己</div>
         <h1>把给别人的那份认真，分一半给自己</h1>
         <p class="lede">身体、饭桌、皮肤、肌肉、房间、账户 —— 这六件事撑起一个人的底盘。底盘稳了，谁走都塌不了。</p>
-      </div>
+        <ul class="page-meta"><li><b>9,462</b> 字</li><li>约 <b>25</b> 分钟</li><li><b>6</b> 个案例</li></ul>
+      </header>
       <article class="prose" id="content">
 <h2 id="s6-1" data-num="01">底盘理论：六件事撑住一个人</h2>
 
@@ -678,11 +650,12 @@
   </div>
   <div class="footer-bottom">
     <span>男性觉醒 · 生存与维权手册</span>
-    <span>共 8 篇 · 全文约 106,188 字</span>
+    <span>全文约 106,365 字 · 68 个案例 · 41 条法条</span>
   </div>
 </footer>
 
 <button class="to-top" aria-label="回到顶部">↑</button>
+<script src="assets/js/search-index.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -9,10 +9,12 @@
 <meta property="og:title" content="及时止损：识别该走的信号与干净的退出方式 | 男性觉醒">
 <meta property="og:description" content="沉没成本陷阱、30条红旗信号、分手时的财务切割清单、人身安全保护与报复风险处置。">
 <meta property="og:type" content="article">
+<meta name="theme-color" content="#f7f4ee">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+<a class="skip" href="#content">跳到正文</a>
 <div class="progress"></div>
 
 <header class="topbar">
@@ -21,59 +23,45 @@
       <span class="brand-mark">醒</span>
       <span class="brand-text">男性觉醒<small>MANHOOD · HANDBOOK</small></span>
     </a>
-    <button class="nav-toggle" aria-label="展开导航" aria-expanded="false">目录</button>
-    <nav class="nav">
+    <nav class="nav" id="nav">
       <a href="index.html">首页</a><a href="ch01.html">一 · 认知</a><a href="ch02.html">二 · 金钱</a><a href="ch03.html" class="is-active">三 · 止损</a><a href="ch04.html">四 · 识别</a><a href="ch05.html">五 · 维权</a><a href="ch06.html">六 · 爱自己</a><a href="ch07.html">七 · 重建</a><a href="appendix.html">附录</a><a href="hot.html">热点发布</a>
     </nav>
+    <div class="topbar-tools">
+      <button class="icon-btn search-open" type="button" aria-label="搜索全站内容">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20.5 20.5 16.7 16.7"/></svg>
+        <span>搜索</span><kbd class="kbd">Ctrl K</kbd>
+      </button>
+      <button class="icon-btn toc-toggle" type="button" aria-label="展开本章目录" aria-expanded="false">目录</button>
+      <button class="icon-btn nav-toggle" type="button" aria-label="展开章节导航" aria-expanded="false">章节</button>
+    </div>
   </div>
 </header>
 
+<div class="toc-scrim"></div>
+
 <div class="shell">
   <div class="layout">
-    <aside class="side">
-      <p class="side-title">本章目录</p>
-      <ul class="side-list">
-        <li><a href="#s3-1" class="is-active">沉没成本：为什么"再投一点就能回本"必输</a></li>
-        <li class="sub"><a href="#s3-1-1">损失厌恶：痛感为什么比快感强</a></li>
-        <li class="sub"><a href="#s3-1-2">三个陷阱：长得像，杀你的方式不同</a></li>
-        <li class="sub"><a href="#s3-1-3">关键论断：感情不是投资</a></li>
-        <li class="sub"><a href="#s3-1-4">止损期望值：把"不甘心"换算成钱</a></li>
-        <li class="sub"><a href="#s3-1-5">反常识：越"不甘心"，输得越干净</a></li>
-        <li><a href="#s3-2">红旗信号 30 条：分三级看</a></li>
-        <li><a href="#s3-3">三个止损触发器：财务、尊严、安全</a></li>
-        <li class="sub"><a href="#s3-3-1">触发器一 · 财务越界</a></li>
-        <li class="sub"><a href="#s3-3-2">触发器二 · 尊严越界</a></li>
-        <li class="sub"><a href="#s3-3-3">触发器三 · 安全越界</a></li>
-        <li class="sub"><a href="#s3-3-4">"一次即触发"怎么写才有效</a></li>
-        <li><a href="#s3-4">决策工具：三个测试帮你定</a></li>
-        <li class="sub"><a href="#s3-4-1">测试一 · 可逆性检验</a></li>
-        <li class="sub"><a href="#s3-4-2">测试二 · 三个月观察法</a></li>
-        <li class="sub"><a href="#s3-4-3">测试三 · 旁观者测试</a></li>
-        <li class="sub"><a href="#s3-4-4">分手决策表：把八个维度打分</a></li>
-        <li><a href="#s3-5">财务切割清单：分手前必须处理完的 9 件事</a></li>
-        <li class="sub"><a href="#s3-5-1">担保：唯一能让你两年后收到传票的一项</a></li>
-        <li><a href="#s3-6">分手的执行：怎么开口，怎么应对反扑</a></li>
-        <li class="sub"><a href="#s3-6-1">开口的四个原则</a></li>
-        <li class="sub"><a href="#s3-6-2">六种反扑：她说什么，你为什么不接，你回哪一句</a></li>
-        <li class="sub"><a href="#s3-6-3">安全原则：不单独，不密闭，不上她的车</a></li>
-        <li class="sub"><a href="#s3-6-4">社交圈：不解释，不控诉，不互撕</a></li>
-        <li><a href="#s3-7">分手后的报复：造谣、举报、上门、纠缠</a></li>
-        <li class="sub"><a href="#s3-7-1">网络造谣与曝光隐私</a></li>
-        <li class="sub"><a href="#s3-7-2">恶意举报：让你被调查，就是目的</a></li>
-        <li class="sub"><a href="#s3-7-3">上门与跟踪纠缠</a></li>
-        <li class="sub"><a href="#s3-7-4">骚扰电话与信息轰炸</a></li>
-        <li><a href="#s3-8">"分手费"与"青春损失费"：法律上到底有没有</a></li>
-        <li class="sub"><a href="#s3-8-1">三种真的有请求权的情形</a></li>
-        <li class="sub"><a href="#s3-8-2">陷阱：被逼着签下的"分手协议"和"欠条"</a></li>
-        <li><a href="#s3-99">本章要点</a></li>
-      </ul>
+    <aside class="side" id="toc">
+      <p class="side-title">本章目录 <span>9 节</span></p>
+      <ol class="toc">
+        <li class="toc-item is-active is-open"><a class="toc-link" href="#s3-1"><i>01</i><span>沉没成本：为什么"再投一点就能回本"必输</span></a><ul class="toc-sub"><li><a href="#s3-1-1">损失厌恶：痛感为什么比快感强</a></li><li><a href="#s3-1-2">三个陷阱：长得像，杀你的方式不同</a></li><li><a href="#s3-1-3">关键论断：感情不是投资</a></li><li><a href="#s3-1-4">止损期望值：把"不甘心"换算成钱</a></li><li><a href="#s3-1-5">反常识：越"不甘心"，输得越干净</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s3-2"><i>02</i><span>红旗信号 30 条：分三级看</span></a></li>
+        <li class="toc-item"><a class="toc-link" href="#s3-3"><i>03</i><span>三个止损触发器：财务、尊严、安全</span></a><ul class="toc-sub"><li><a href="#s3-3-1">触发器一 · 财务越界</a></li><li><a href="#s3-3-2">触发器二 · 尊严越界</a></li><li><a href="#s3-3-3">触发器三 · 安全越界</a></li><li><a href="#s3-3-4">"一次即触发"怎么写才有效</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s3-4"><i>04</i><span>决策工具：三个测试帮你定</span></a><ul class="toc-sub"><li><a href="#s3-4-1">测试一 · 可逆性检验</a></li><li><a href="#s3-4-2">测试二 · 三个月观察法</a></li><li><a href="#s3-4-3">测试三 · 旁观者测试</a></li><li><a href="#s3-4-4">分手决策表：把八个维度打分</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s3-5"><i>05</i><span>财务切割清单：分手前必须处理完的 9 件事</span></a><ul class="toc-sub"><li><a href="#s3-5-1">担保：唯一能让你两年后收到传票的一项</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s3-6"><i>06</i><span>分手的执行：怎么开口，怎么应对反扑</span></a><ul class="toc-sub"><li><a href="#s3-6-1">开口的四个原则</a></li><li><a href="#s3-6-2">六种反扑：她说什么，你为什么不接，你回哪一句</a></li><li><a href="#s3-6-3">安全原则：不单独，不密闭，不上她的车</a></li><li><a href="#s3-6-4">社交圈：不解释，不控诉，不互撕</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s3-7"><i>07</i><span>分手后的报复：造谣、举报、上门、纠缠</span></a><ul class="toc-sub"><li><a href="#s3-7-1">网络造谣与曝光隐私</a></li><li><a href="#s3-7-2">恶意举报：让你被调查，就是目的</a></li><li><a href="#s3-7-3">上门与跟踪纠缠</a></li><li><a href="#s3-7-4">骚扰电话与信息轰炸</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s3-8"><i>08</i><span>"分手费"与"青春损失费"：法律上到底有没有</span></a><ul class="toc-sub"><li><a href="#s3-8-1">三种真的有请求权的情形</a></li><li><a href="#s3-8-2">陷阱：被逼着签下的"分手协议"和"欠条"</a></li></ul></li>
+        <li class="toc-item"><a class="toc-link" href="#s3-99"><i>09</i><span>本章要点</span></a></li>
+      </ol>
     </aside>
     <main class="main">
-      <div class="pagehead">
+      <header class="pagehead">
         <div class="kicker">第三篇 · 及时止损</div>
         <h1>止损不是认输，是把剩余本金拿回来</h1>
         <p class="lede">所有赌徒都死在“再投一点就能回本”这句话上。感情里的沉没成本，比股市更狠 —— 因为它连收盘价都不告诉你。</p>
-      </div>
+        <ul class="page-meta"><li><b>1.7 万</b> 字</li><li>约 <b>45</b> 分钟</li><li><b>9</b> 个案例</li><li><b>8</b> 条法条</li></ul>
+      </header>
       <article class="prose" id="content">
 <h2 id="s3-1" data-num="01">沉没成本：为什么"再投一点就能回本"必输</h2>
 
@@ -768,11 +756,12 @@
   </div>
   <div class="footer-bottom">
     <span>男性觉醒 · 生存与维权手册</span>
-    <span>共 8 篇 · 全文约 106,188 字</span>
+    <span>全文约 106,365 字 · 68 个案例 · 41 条法条</span>
   </div>
 </footer>
 
 <button class="to-top" aria-label="回到顶部">↑</button>
+<script src="assets/js/search-index.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
